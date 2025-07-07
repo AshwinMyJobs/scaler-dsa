@@ -37,8 +37,7 @@ public class MaxWaterStoredInBetweenBuilding {
         }
         return res;
     }
-
-
+    
     private static void construcPrefixMax(int[] A){
         int[] pMax = new int[A.length];
         pMax[0] = 0;
