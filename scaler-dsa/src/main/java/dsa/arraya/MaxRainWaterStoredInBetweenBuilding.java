@@ -3,7 +3,7 @@ package dsa.arraya;
 import java.util.Arrays;
 import java.util.stream.Stream;
 
-public class MaxWaterStoredInBetweenBuilding {
+public class MaxRainWaterStoredInBetweenBuilding {
 
     public static void main(String[] args) {
         int[] A = {1,0,2,5,1,0,3,0,0,7};
