@@ -34,4 +34,73 @@ public class EqulibriumIndex {
 
         return ans;
     }
+
+    private static int practice1(int[] A){
+        int sum1 = 0, sum2 = 0, ans = Integer.MAX_VALUE;
+
+        for (int i = 0; i < A.length; i++) {
+            sum1 = sum1 + A[i];
+        }
+
+        for (int i = 0; i < A.length; i++) {
+            sum1 = sum1 - A[i];
+
+            if(sum1==sum2){
+                ans = i;
+                break;
+            }
+
+            sum2 = sum2 + A[i];
+
+        }
+
+        if(ans!=Integer.MAX_VALUE)
+            return ans;
+        else
+            return -1;
+    }
+
+    private static int practice2(int[] A){
+        int sum1=0, sum2=0, ans=Integer.MAX_VALUE;
+
+        for (int i = 0; i < A.length; i++) {
+            sum1 = sum1 + A[i];
+        }
+
+        for (int i = 0; i < A.length; i++) {
+            sum1 = sum1 - A[i];
+
+            if(sum1==sum2){
+                ans = i;
+                break;
+            }
+
+            sum2 = sum2 + A[i];
+        }
+
+        if(ans!=Integer.MAX_VALUE)
+            return ans;
+        else
+            return -1;
+    }
+
+    private static int practice3(int[] A){
+        int sum1=0, sum2=0, ans=Integer.MAX_VALUE;
+
+        for (int i = 0; i < A.length; i++) {
+
+            sum1 = sum1 - A[i];
+            if(sum1==sum2){
+                ans = i;
+                break;
+            }
+
+            sum2 = sum2 + A[i];
+        }
+
+        if(ans!=Integer.MAX_VALUE)
+            return ans;
+        else
+            return -1;
+    }
 }
