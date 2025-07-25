@@ -1,4 +1,4 @@
-package dsa.arraya;
+package dsa.arrayas;
 
 public class ClosestMinMax {
 

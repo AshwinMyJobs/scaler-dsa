@@ -1,4 +1,4 @@
-package dsa.arraya;
+package dsa.arrayas;
 
 import java.util.Arrays;
 
